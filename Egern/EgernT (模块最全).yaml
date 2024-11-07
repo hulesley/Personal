@@ -67,9 +67,9 @@ policy_groups:
     name: 手动选择
     type: select
     urls:
-    - https://scdy03.scsub.com/apiv2/letgy9aq54x1btnf?sub=2&extend=1
-    - https://129.204.171.137/cornets/api/v1/client/subscribe?token=fe9e8c134ee37f75b944e165901da4c4
-    - https://911tg3rs.com/api/v1/client/subscribe?token=9ebdba38548431adf7103cd37edfc4d3
+    - (订阅1）https
+    - (订阅2）https
+    - (订阅3）https
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
     hidden: false
 - select:
@@ -258,9 +258,6 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TikTok/TikTok.list
     policy: TikTok
-- rule_set:
-    match: https://raw.githubusercontent.com/hulesley/Personal/refs/heads/main/Loon/rule/Tinder.list
-    policy: DIRECT
 - domain_suffix:
     match: dns.google.com
     policy: 国外网站
