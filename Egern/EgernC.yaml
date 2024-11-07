@@ -309,23 +309,3 @@ mitm:
   ca_p12: egern.p12
   ca_passphrase: egern
 modules:
-- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DNS%20%E5%88%86%E6%B5%81.official.sgmodule
-  enabled: true
-- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20%E9%80%9A%E7%94%A8%E6%A8%A1%E5%9D%97.official.sgmodule
-  enabled: true
-- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DualSubsYouTube.official.sgmodule
-  enabled: true
-- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DualSubsSpotify.official.sgmodule
-  enabled: true
-- name: 广告平台拦截器
-  url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Plugin/BlockAdvertisers.plugin/_end_/BlockAdvertisers.sgmodule?type=loon-plugin&target=surge-module&del=true
-  enabled: true
-- name: 可莉去广告
-  url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Plugin/Remove_ads_by_keli.plugin/_end_/%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E5%8F%AF%E8%8E%89%E8%87%AA%E7%94%A8.sgmodule?n=%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E5%8F%AF%E8%8E%89%E8%87%AA%E7%94%A8+%E5%8E%BB%E5%B9%BF%E5%91%8A%E5%90%88%E9%9B%86%5Cn%E4%BD%9C%E8%80%85%EF%BC%9A%40%E5%8F%AF%E8%8E%89%F0%9F%85%A5&type=loon-plugin&target=surge-module&del=true&nore=true&category=%E2%9A%99%EF%B8%8F%20%E2%96%B8%20NoAds
-  enabled: true
-- url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Plugin/Block_HTTPDNS.plugin/_end_/Block_HTTPDNS.sgmodule?type=loon-plugin&target=surge-module&del=true
-  enabled: false
-- url: https://limbopro.com/Adblock4limbo.sgmodule
-  enabled: true
-- url: https://github.com/VirgilClyne/GetSomeFries/raw/main/sgmodule/HTTPDNS.Block.sgmodule
-  enabled: true
