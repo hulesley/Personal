@@ -1,0 +1,7 @@
+# NAME: Tinder
+no_resolve: true
+domain_set:
+- data.gotinder.com
+- keepalive.gotinder.com
+- images-ssl.gotinder.com
+- api.gotinder.com
