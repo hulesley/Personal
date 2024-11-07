@@ -8,23 +8,57 @@ include_all_networks: false
 include_cellular_services: false
 dns:
   bootstrap:
+  - 202.12.27.33
   - 119.29.29.29
-  - 233.5.5.5
+  - 223.6.6.6
   upstreams:
     Secure DNS:
+    - https://8.138.89.130/dns-query
     - https://dns.alidns.com/dns-query
+    Open DNS:
+    - https://8.138.89.130/dns-query
+    - https://208.67.222.222/dns-query
+    Google DNS:
+    - tls:8.8.8.8
   forward:
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  - wildcard:
+      match: apple
       value: system
   - wildcard:
-      match: '*'
+      match: youtube
+      value: tls:8.8.8.8
+  - wildcard:
+      match: google
+      value: tls:8.8.8.8
+  - wildcard:
+      match: chipsfuck
+      value: Open DNS
+  - wildcard:
+      match: pqjc.buzz
+      value: Google DNS
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
       value: Secure DNS
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax.list
+      value: Secure DNS
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
+      value: Google DNS
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy_Domain.list
+      value: Google DNS
+  - wildcard:
+      match: '*'
+      value: Open DNS
   hosts:
-    dot.pub: 1.12.12.12
-    dns.alidns.com: 223.5.5.5
     doh.pub: 1.12.12.12
-  public_ip_lookup_url: https://ifconfig.me/ip
+    dns.alidns.com: 223.5.5.5
+    dot.pub: 1.12.12.12
+    dns.google.com: 8.8.8.8
+  block_ips:
+  - 157.148.47.204
+  public_ip_lookup_url: ifconfig.me/ip
 policy_groups:
 - external:
     name: 手动选择
