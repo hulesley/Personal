@@ -14,52 +14,25 @@ dns:
     Secure DNS:
     - https://dns.alidns.com/dns-query
   forward:
-  - wildcard:
-      match: apple
-      value: system
-  - wildcard:
-      match: youtube
-      value: tls:8.8.8.8
-  - wildcard:
-      match: google
-      value: tls:8.8.8.8
-  - wildcard:
-      match: chipsfuck
-      value: Open DNS
-  - wildcard:
-      match: pqjc.buzz
-      value: Google DNS
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-      value: Secure DNS
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax.list
-      value: Secure DNS
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
-      value: Google DNS
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy_Domain.list
-      value: Google DNS
+      value: system
   - wildcard:
       match: '*'
-      value: Open DNS
+      value: Secure DNS
   hosts:
-    doh.pub: 1.12.12.12
-    dns.alidns.com: 223.5.5.5
     dot.pub: 1.12.12.12
-    dns.google.com: 8.8.8.8
-  block_ips:
-  - 157.148.47.204
-  public_ip_lookup_url: ifconfig.me/ip
+    dns.alidns.com: 223.5.5.5
+    doh.pub: 1.12.12.12
+  public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
 - external:
     name: 手动选择
     type: select
     urls:
-    - 这里改成你自己的1机场https
-    - 这里改成你自己的2机场https
-    - 这里改成你自己的3机场https
+    - 这里改成你自己的1机场https:
+    - 这里改成你自己的2机场https:
+    - 这里改成你自己的3机场https:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
     hidden: false
 - select:
@@ -336,17 +309,13 @@ mitm:
   ca_p12: egern.p12
   ca_passphrase: egern
 modules:
-- name: 🍟 Fries: 🌐 DNS enhanced
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DNS%20%E5%88%86%E6%B5%81.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DNS%20%E5%88%86%E6%B5%81.official.sgmodule
   enabled: true
-- name: 🍟 Fries: 🌐 General Enhanced
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20%E9%80%9A%E7%94%A8%E6%A8%A1%E5%9D%97.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20%E9%80%9A%E7%94%A8%E6%A8%A1%E5%9D%97.official.sgmodule
   enabled: true
-- name: 🍿️ DualSubs: ▶️ YouTube
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DualSubsYouTube.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DualSubsYouTube.official.sgmodule
   enabled: true
-- name: 🍿️ DualSubs: 🎵 Spotify
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DualSubsSpotify.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DualSubsSpotify.official.sgmodule
   enabled: true
 - name: 广告平台拦截器
   url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Plugin/BlockAdvertisers.plugin/_end_/BlockAdvertisers.sgmodule?type=loon-plugin&target=surge-module&del=true
@@ -354,56 +323,40 @@ modules:
 - name: 可莉去广告
   url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Plugin/Remove_ads_by_keli.plugin/_end_/%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E5%8F%AF%E8%8E%89%E8%87%AA%E7%94%A8.sgmodule?n=%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E5%8F%AF%E8%8E%89%E8%87%AA%E7%94%A8+%E5%8E%BB%E5%B9%BF%E5%91%8A%E5%90%88%E9%9B%86%5Cn%E4%BD%9C%E8%80%85%EF%BC%9A%40%E5%8F%AF%E8%8E%89%F0%9F%85%A5&type=loon-plugin&target=surge-module&del=true&nore=true&category=%E2%9A%99%EF%B8%8F%20%E2%96%B8%20NoAds
   enabled: true
-- name: 拦截HTTPDNS
-  url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Plugin/Block_HTTPDNS.plugin/_end_/Block_HTTPDNS.sgmodule?type=loon-plugin&target=surge-module&del=true
+- url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Plugin/Block_HTTPDNS.plugin/_end_/Block_HTTPDNS.sgmodule?type=loon-plugin&target=surge-module&del=true
   enabled: false
-- name: 毒奶去广告
-  url: https://limbopro.com/Adblock4limbo.sgmodule
+- url: https://limbopro.com/Adblock4limbo.sgmodule
   enabled: true
-- name: 🍟 Fries: 🚫 Block HTTPDNS
-  url: https://github.com/VirgilClyne/GetSomeFries/raw/main/sgmodule/HTTPDNS.Block.sgmodule
+- url: https://github.com/VirgilClyne/GetSomeFries/raw/main/sgmodule/HTTPDNS.Block.sgmodule
   enabled: true
 - name: 彩云天气VIP v7.20.0
   url: http://script.hub/file/_start_/https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js/_end_/caiyun.sgmodule?type=qx-rewrite&target=surge-module&del=true
   enabled: true
-- name: BoxJs
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20BoxJs.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20BoxJs.official.sgmodule
   enabled: true
-- name: Script-Hub
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Script%20Hub.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Script%20Hub.official.sgmodule
   enabled: true
-- name: Sub-Store
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Sub-Store.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Sub-Store.official.sgmodule
   enabled: true
-- name: iRingo: 📰 News
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20News%20%E8%A7%A3%E9%94%81.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20News%20%E8%A7%A3%E9%94%81.official.sgmodule
   enabled: true
-- name: iRingo: ✈ TestFlight
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20TestFlight.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20TestFlight.official.sgmodule
   enabled: true
-- name: iRingo: 📺 TV app
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20TV%20%E5%A2%9E%E5%BC%BA.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20TV%20%E5%A2%9E%E5%BC%BA.official.sgmodule
   enabled: true
-- name: iRingo: 🗺️ Maps
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20%E5%9C%B0%E5%9B%BE%E4%BC%98%E5%8C%96.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20%E5%9C%B0%E5%9B%BE%E4%BC%98%E5%8C%96.official.sgmodule
   enabled: true
-- name: iRingo: 🌤 WeatherKit
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20%E5%A4%A9%E6%B0%94%E5%A2%9E%E5%BC%BA.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20%E5%A4%A9%E6%B0%94%E5%A2%9E%E5%BC%BA.official.sgmodule
   enabled: true
-- name: iRingo: 📍 Location
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20%E5%AE%9A%E4%BD%8D%E4%BF%AE%E6%94%B9.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20Apple%20%E5%AE%9A%E4%BD%8D%E4%BF%AE%E6%94%B9.official.sgmodule
   enabled: true
-- name: 📺 BiliBili: 🛡️ ADBlock
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliADBlock.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliADBlock.official.sgmodule
   enabled: true
-- name: 📺 BiliBili: ⚙️ Enhanced
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliEnhanced.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliEnhanced.official.sgmodule
   enabled: true
-- name: 📺 BiliBili: 🌐 Global
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliGlobal.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliGlobal.official.sgmodule
   enabled: true
-- name: 📺 BiliBili: 🔀 Redirect
-  url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliRedirect.official.sgmodule
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliRedirect.official.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20DualSubsNetflix.official.sgmodule
   enabled: true
@@ -995,13 +948,11 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
   enabled: true
-- name: ''
-  url: https://ruleset.skk.moe/Modules/sukka_local_dns_mapping.sgmodule
+- url: https://ruleset.skk.moe/Modules/sukka_local_dns_mapping.sgmodule
   enabled: true
 - url: http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/MoYu/master/NicegramProCrack.js/_end_/NicegramProCrack.sgmodule?type=qx-rewrite&target=surge-module&del=true
   enabled: true
-- name: ''
-  url: https://github.com/DualSubs/YouTube/raw/main/modules/DualSubs.YouTube.sgmodule
+- url: https://github.com/DualSubs/YouTube/raw/main/modules/DualSubs.YouTube.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
   enabled: true
@@ -1019,3 +970,4 @@ modules:
   enabled: false
 - url: https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TiKTok-JP.sgmodule
   enabled: false
+  
