@@ -30,9 +30,9 @@ policy_groups:
     name: 手动选择
     type: select
     urls:
-    - 这里改成你自己的1机场https:
-    - 这里改成你自己的2机场https:
-    - 这里改成你自己的3机场https:
+    - 这里改成你自己的1机场https
+    - 这里改成你自己的2机场https
+    - 这里改成你自己的3机场https
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
     hidden: false
 - select:
