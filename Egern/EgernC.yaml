@@ -1,13 +1,11 @@
+allow_external_connections: true
 vif_only: true
-hijack_dns:
-- '*:53'
-geoip_db_url: https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb
-asn_db_url: https://raw.githubusercontent.com/P3TERX/GeoLite.mmdb/download/GeoLite2-ASN.mmdb
-proxy_latency_test_url: http://cp.cloudflare.com/generate_204
+geoip_db_url: https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
+proxy_latency_test_url: http://detectportal.firefox.com/success.txt
 direct_latency_test_url: http://www.apple.com/library/test/success.html
-vif_excluded_routes:
-- boc.com
-- cmbchina.com
+include_all_networks: false
+include_cellular_services: false
 dns:
   bootstrap:
   - 202.12.27.33
