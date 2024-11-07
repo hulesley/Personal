@@ -8,18 +8,11 @@ include_all_networks: false
 include_cellular_services: false
 dns:
   bootstrap:
-  - 202.12.27.33
   - 119.29.29.29
-  - 223.5.5.5
+  - 233.5.5.5
   upstreams:
     Secure DNS:
-    - https://8.138.89.130/dns-query
     - https://dns.alidns.com/dns-query
-    Open DNS:
-    - https://8.138.89.130/dns-query
-    - https://208.67.222.222/dns-query
-    Google DNS:
-    - tls:8.8.8.8
   forward:
   - wildcard:
       match: apple
@@ -64,9 +57,9 @@ policy_groups:
     name: 手动选择
     type: select
     urls:
-    - 这里改成你自己的1机场https:
-    - 这里改成你自己的2机场https:
-    - 这里改成你自己的3机场https:
+    - 这里改成你自己的1机场https
+    - 这里改成你自己的2机场https
+    - 这里改成你自己的3机场https
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
     hidden: false
 - select:
