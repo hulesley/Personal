@@ -27,283 +27,521 @@ dns:
   public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
 - external:
-    name: 手动选择
-    type: select
+    name: 🛸外部订阅
+    type: auto_test
     urls:
-    - 这里改成你自己的1机场https
-    - 这里改成你自己的2机场https
-    - 这里改成你自己的3机场https
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
+    - 你的订阅3
+    - 你的订阅1
+    - 你的订阅2
+    filter: ^(?!.*(日本))
+    interval: 600
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applegamecenter.png
     hidden: false
-- select:
-    name: 国外网站
+- auto_test:
+    name: 🐢Proxy
     policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
-- select:
-    name: 国际媒体
+    - 🛸外部订阅
+    - HongKong
+    - TaiWan
+    - Singapore
+    - America
+    - Japan
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fishchips0.png
+- auto_test:
+    name: 🏝️Global全局
     policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    - 🛸外部订阅
+    - America
+    - Singapore
+    - HongKong
+    - TaiWan
+    flatten: false
+    icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute1/2921101.png
 - select:
-    name: 苹果服务
+    name: 💬Telegram
     policies:
-    - DIRECT
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
+    - 🛸外部订阅
+    - TaiWan
+    - HongKong
+    - Singapore
+    - America
+    - Japan
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Telegram.png
 - select:
-    name: 微软服务
-    policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    - DIRECT
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
-- select:
-    name: 谷歌服务
-    policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
-- select:
-    name: 电报消息
-    policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-- select:
-    name: 推特消息
-    policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
-- select:
-    name: OpenAI
-    policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
-- select:
-    name: 游戏平台
-    policies:
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
-- select:
-    name: 哔哩哔哩
+    name: 📺国内视频
     policies:
     - DIRECT
-    - 香港节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
+- select:
+    name: 🐽ChinaDNS
+    policies:
+    - DIRECT
+- select:
+    name: 🐷国内
+    policies:
+    - DIRECT
+    hidden: true
+- select:
+    name: 👀百度
+    policies:
+    - DIRECT
+    icon: ''
+- select:
+    name: 🐧腾讯
+    policies:
+    - DIRECT
+    icon: ''
+- select:
+    name: 🦠WeChat
+    policies:
+    - DIRECT
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/WeChat.png
+- select:
+    name: 🔗阿里
+    policies:
+    - DIRECT
+- select:
+    name: 🐠闲鱼
+    policies:
+    - DIRECT
+- select:
+    name: 💣钉钉
+    policies:
+    - DIRECT
+- select:
+    name: 🐖抖音
+    policies:
+    - DIRECT
+- auto_test:
+    name: 🌈GitHub
+    policies:
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/czy13724/LeviIcons/main/leviicons/github1.png
+- select:
+    name: 🍎App Store
+    policies:
+    - DIRECT
+- select:
+    name: ☁️icloud
+    policies:
+    - DIRECT
+- select:
+    name: 📲中国电信
+    policies:
+    - DIRECT
+- select:
+    name: 📲中国移动
+    policies:
+    - DIRECT
+- select:
+    name: 📲中国联通
+    policies:
+    - DIRECT
+- select:
+    name: 🍎Apple
+    policies:
+    - DIRECT
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Apple.png
+- select:
+    name: 🍎TestFlight
+    policies:
+    - DIRECT
+    icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Apple.png
+- auto_test:
+    name: 🤖OpenAI
+    policies:
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Bot.png
+- auto_test:
+    name: 📩Google
+    policies:
+    - 🛸外部订阅
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Google.png
+- auto_test:
+    name: 🖲️YouTube
+    policies:
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bahamut.png
+- select:
+    name: 🐚PayPal
+    policies:
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/PayPal.png
 - select:
     name: Emby
     policies:
-    - 手动选择
-    - DIRECT
-    flatten: true
-    filter: ^(?=.*(.*))(?!.*((?i)邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|防止|国内|🎮|(\b(GAME|USE|USED|TOTAL|EXPIRE|EMAIL|Panel)\d{0,2}\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Emby.png
 - select:
-    name: 兜底分流
+    name: Spotify
+    policies:
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Spotify.png
+- auto_test:
+    name: 🎗️Social
+    policies:
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Twitter.png
+- select:
+    name: 🕹️Games
     policies:
     - DIRECT
-    - 香港节点
-    - 美国节点
-    - 狮城节点
-    - 日本节点
-    - 台湾节点
-    - 手动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-- auto_test:
-    name: 香港节点
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Game.png
+- select:
+    name: 🎥Streaming
     policies:
-    - 手动选择
-    flatten: true
-    filter: ^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|BGP|游戏|(\b(GAME)\b))).*$
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-- auto_test:
-    name: 美国节点
+    - DIRECT
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Netflix.png
+- select:
+    name: Crypto
     policies:
-    - 手动选择
-    flatten: true
-    filter: ^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-- auto_test:
-    name: 狮城节点
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/CCCAT_C.png
+- select:
+    name: BiliBili
     policies:
-    - 手动选择
-    flatten: true
-    filter: ^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-- auto_test:
-    name: 日本节点
+    - DIRECT
+    - HongKong
+    - TaiWan
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png
+- select:
+    name: Speedtest
     policies:
-    - 手动选择
-    flatten: true
-    filter: ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
-- auto_test:
-    name: 韩国节点
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Speedtest.png
+- select:
+    name: 💻Microsoft
     policies:
-    - 手动选择
-    flatten: true
-    filter: ^(?=.*((?i)🇰🇷|韩国|韩|(\b(KR|Korea)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+    - DIRECT
+    - 🐢Proxy
+    - HongKong
+    - TaiWan
+    - Japan
+    - Singapore
+    - America
+    - 🛸外部订阅
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Microsoft.png
+    hidden: true
 - auto_test:
-    name: 台湾节点
+    name: TaiWan
     policies:
-    - 手动选择
+    - 🛸外部订阅
     flatten: true
-    filter: ^(?=.*((?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+    filter: ^(?=.*((?i)🇹🇼|台|(\b(TW|Tai|Taiwan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png
+- auto_test:
+    name: HongKong
+    policies:
+    - 🛸外部订阅
+    flatten: true
+    filter: ^(?=.*((?i)🇭🇰|港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/HK.png
+- auto_test:
+    name: Singapore
+    policies:
+    - 🛸外部订阅
+    flatten: true
+    filter: ^(?=.*((?i)🇸🇬|新|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png
+- auto_test:
+    name: America
+    policies:
+    - 🛸外部订阅
+    flatten: true
+    filter: ^(?=.*((?i)🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/United_States.png
+- auto_test:
+    name: Japan
+    policies:
+    - 🛸外部订阅
+    flatten: true
+    filter: ^(?=.*((?i)🇯🇵|日|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/JP.png
+- auto_test:
+    name: 🚦国外视频
+    policies:
+    - 🛸外部订阅
+- select:
+    name: 🧿Final兜底
+    policies:
+    - 🛸外部订阅
+    - TaiWan
+    - HongKong
+    - Singapore
+    - America
+    - Japan
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSlinks.png
 rules:
-- domain_suffix:
-    match: dns.google.com
-    policy: 国外网站
-- domain_suffix:
-    match: 8.8.8.8
-    policy: 国外网站
 - rule_set:
-    match: https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Loon/LoonRemoteRule/Apple/AppleUpdateRules.conf
-    policy: REJECT
+    match: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list
+    policy: 💬Telegram
 - rule_set:
-    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BlockHttpDNS/BlockHttpDNS.list
-    policy: REJECT
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
+    policy: 💬Telegram
+- rule_set:
+    match: https://whatshub.top/rule/Telegram.list
+    policy: 💬Telegram
+    disabled: true
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
+    policy: 🐢Proxy
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia.list
+    policy: 🏝️Global全局
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global.list
+    policy: 🏝️Global全局
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list
+    policy: 🐷国内
+- rule_set:
+    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/StreamingCN.yaml
+    policy: 📺国内视频
+- rule_set:
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list
+    policy: 🌈GitHub
+- rule_set:
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list
+    policy: 🖲️YouTube
+- rule_set:
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
+    policy: 📩Google
+    update_interval: 7200
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaDNS/ChinaDNS.list
+    policy: 🐽ChinaDNS
+- rule_set:
+    match: https://whatshub.top/rule/Tencent.list
+    policy: 🐧腾讯
+- rule_set:
+    match: https://github.com/rouxinya/Matrix-io/blob/master/Egern/Ruleset/QQ.yaml
+    policy: 🐧腾讯
+- rule_set:
+    match: https://raw.githubusercontent.com/rouxinya/Matrix-io/master/Egern/Ruleset/QQMusic.yaml
+    policy: 🐧腾讯
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list
+    policy: 🦠WeChat
+    update_interval: 7200
+- rule_set:
+    match: http://script.hub/file/_start_/https://whatshub.top/rule/WeChat.list/_end_/WeChat.list?type=rule-set&target=surge-rule-set&del=true
+    policy: 🦠WeChat
+- rule_set:
+    match: https://raw.githubusercontent.com/axcsz/Collect/master/Ruleset/Other/WeChat.list
+    policy: 🦠WeChat
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list
+    policy: 🦠WeChat
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/rouxinya/ios_rule_script/master/rule/Surge/Alibaba/Alibaba_All_No_Resolve.list
+    policy: 🔗阿里
+- rule_set:
+    match: https://whatshub.top/rule/AliPay.list
+    policy: 🔗阿里
+- rule_set:
+    match: https://whatshub.top/rule/XianYu.list
+    policy: 🐠闲鱼
+- rule_set:
+    match: https://whatshub.top/rule/DingTalk.list
+    policy: 💣钉钉
+- rule_set:
+    match: https://whatshub.top/rule/DouYin.list
+    policy: 🐖抖音
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Baidu/Baidu.list
+    policy: 👀百度
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All.list
+    policy: 🍎Apple
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/FindMy/FindMy.list
+    policy: 🍎Apple
+- rule_set:
+    match: http://script.hub/file/_start_/https://whatshub.top/rule/Apple.list/_end_/Apple.list?type=rule-set&target=surge-rule-set&del=true
+    policy: 🍎Apple
+- rule_set:
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list
+    policy: 🍎Apple
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list
+    policy: 🍎App Store
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list
+    policy: ☁️icloud
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China_All_No_Resolve.list
+    policy: 🐷国内
+- rule_set:
+    match: https://github.com/Centralmatrix3/Matrix-io/blob/master/Egern/Ruleset/China.yaml
+    policy: 🐷国内
+- rule_set:
+    match: https://whatshub.top/rule/ChinaTelecom.list
+    policy: 📲中国电信
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMobile/ChinaMobile.list
+    policy: 📲中国移动
+- rule_set:
+    match: https://whatshub.top/rule/ChinaUnicom.list
+    policy: 📲中国联通
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list
+    policy: DIRECT
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list
+    policy: DIRECT
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list
+    policy: DIRECT
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaDNS/ChinaDNS.list
+    policy: DIRECT
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list
+    policy: DIRECT
+    update_interval: 7200
+- domain:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China_Domain.list
+    policy: DIRECT
+- rule_set:
+    match: https://whatshub.top/rule/KuaiShou.list
+    policy: DIRECT
+- rule_set:
+    match: https://whatshub.top/rule/AppleID.list
+    policy: DIRECT
+- rule_set:
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/NetEaseMusic/NetEaseMusic.list
+    policy: DIRECT
+    update_interval: 7200
+- rule_set:
+    match: http://script.hub/file/_start_/https://whatshub.top/rule/AppStore.list/_end_/AppStore.list?type=rule-set&target=surge-rule-set&del=true
+    policy: DIRECT
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/APNs.yaml
     policy: DIRECT
+    update_interval: 7200
 - rule_set:
-    match: https://adrules.top/adrules.list
-    policy: REJECT
+    match: https://raw.githubusercontent.com/Repcz/Tool/X/Egern/Rules/Twitter.yaml
+    policy: 🎗️Social
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/OpenAI.yaml
-    policy: OpenAI
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list
+    policy: 🎗️Social
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Github.yaml
-    policy: 国外网站
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list
+    policy: 🎗️Social
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/OneDrive.yaml
-    policy: 微软服务
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list
+    policy: 🎥Streaming
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Microsoft.yaml
-    policy: 微软服务
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list
+    policy: 🎥Streaming
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/YouTube.yaml
-    policy: 谷歌服务
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list
+    policy: 🎥Streaming
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Google.yaml
-    policy: 谷歌服务
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list
+    policy: 🎥Streaming
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Telegram.yaml
-    policy: 电报消息
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Crypto/Crypto.list
+    policy: Crypto
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Twitter.yaml
-    policy: 推特消息
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list
+    policy: 🐚PayPal
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Game.yaml
-    policy: 游戏平台
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list
+    policy: 🤖OpenAI
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Emby.yaml
+    match: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Emby.list
     policy: Emby
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Bahamut.yaml
-    policy: 国际媒体
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list
+    policy: Spotify
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Disney.yaml
-    policy: 国际媒体
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list
+    policy: BiliBili
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/HBO.yaml
-    policy: 国际媒体
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Speedtest/Speedtest.list
+    policy: Speedtest
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Netflix.yaml
-    policy: 国际媒体
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+    policy: 💻Microsoft
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Spotify.yaml
-    policy: 国际媒体
+    match: https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list
+    policy: 🕹️Games
+    update_interval: 7200
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/PrimeVideo.yaml
-    policy: 国际媒体
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/TikTok.yaml
-    policy: 国际媒体
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/ProxyGFW.yaml
-    policy: 国外网站
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Apple.yaml
-    policy: 苹果服务
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Bilibili.yaml
-    policy: 哔哩哔哩
-- rule_set:
-    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list
-    policy: DIRECT
-- rule_set:
-    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax.list
-    policy: DIRECT
-- rule_set:
-    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/China/China.list
-    policy: DIRECT
-- rule_set:
-    match: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    policy: DIRECT
-- rule_set:
-    match: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list
-    policy: DIRECT
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Lan.yaml
-    policy: DIRECT
+    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Streaming.yaml
+    policy: 🚦国外视频
 - geoip:
     match: CN
     policy: DIRECT
 - default:
-    policy: 兜底分流
+    policy: 🧿Final兜底
 mitm:
   enabled: true
   ca_p12: egern.p12
