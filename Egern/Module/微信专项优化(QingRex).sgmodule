@@ -39,21 +39,22 @@ url.cn = server:https://doh.pub/dns-query
 
 [Rule]
 # 广告过滤
-DOMAIN-SUFFIX, wxs.qq.com, REJECT,extended-matching,pre-matching
+# DOMAIN-SUFFIX, wxs.qq.com, REJECT,extended-matching,pre-matching
 
 # 微信小程序通用规则
-DOMAIN,wxsnsdy.wxs.qq.com,REJECT,extended-matching,pre-matching
-DOMAIN,wxsmsdy.video.qq.com,REJECT,extended-matching,pre-matching
-DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT,extended-matching,pre-matching
+# DOMAIN,wxsnsdy.wxs.qq.com,REJECT,extended-matching,pre-matching
+# DOMAIN,wxsmsdy.video.qq.com,REJECT,extended-matching,pre-matching
+# DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT,extended-matching,pre-matching
 
 # 收钱吧广告
-DOMAIN,ads-shopping.shouqianba.com,REJECT,extended-matching,pre-matching
+# DOMAIN,ads-shopping.shouqianba.com,REJECT,extended-matching,pre-matching
 
 # 猫眼电影
-DOMAIN,ad.maoyan.com,REJECT,extended-matching,pre-matching
+# DOMAIN,ad.maoyan.com,REJECT,extended-matching,pre-matching
 
 # 捷停车 @怎么肥事
-DOMAIN,e.jparking.cn,REJECT,extended-matching,pre-matching
+# DOMAIN,e.jparking.cn,REJECT,extended-matching,pre-matching
+# 以上七条
 
 # WeChatpay
 DOMAIN-KEYWORD,wechatpay,DIRECT
