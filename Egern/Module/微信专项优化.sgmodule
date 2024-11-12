@@ -3,8 +3,8 @@
 #!author=ld2j,RuCu6,可莉🅥,VirgilClyne,zZPiglet,ChungW（转写）
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weixin.png
 #!openUrl=https://apps.apple.com/app/id414478124
-# arguments=Proxy:DIRECT
-# arguments-desc=Proxy:DIRECT
+#!arguments=Proxy:DIRECT
+#!arguments-desc=Proxy:DIRECT
 
 [Rule]
 # WeChatpay
