@@ -3,8 +3,8 @@
 #!author=ld2j,RuCu6,可莉🅥,VirgilClyne,zZPiglet,ChungW（转写）
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weixin.png
 #!openUrl=https://apps.apple.com/app/id414478124
-#!arguments=Proxy:DIRECT
-#!arguments-desc=Proxy:DIRECT
+# arguments=Proxy:DIRECT
+# arguments-desc=Proxy:DIRECT
 
 [Rule]
 # WeChatpay
@@ -25,13 +25,13 @@ DOMAIN-SUFFIX,lbs.gtimg.com,DIRECT
 DOMAIN-SUFFIX,map.qq.com,DIRECT
 DOMAIN-SUFFIX,qlogo.cn,DIRECT
 DOMAIN-SUFFIX,qpic.cn,DIRECT
-DOMAIN-SUFFIX,servicewechat.com,{{{Proxy}}}
+DOMAIN-SUFFIX,servicewechat.com,DIRECT
 DOMAIN-SUFFIX,tenpay.com,DIRECT
 DOMAIN-SUFFIX,up-hl.3g.qq.com,DIRECT
 DOMAIN-SUFFIX,vweixinthumb.tc.qq.com,DIRECT
-DOMAIN-SUFFIX,wechat.com,{{{Proxy}}}
-DOMAIN-SUFFIX,wechatlegal.net,{{{Proxy}}}
-DOMAIN-SUFFIX,wechatos.net,{{{Proxy}}}
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,wechatlegal.net,DIRECT
+DOMAIN-SUFFIX,wechatos.net,DIRECT
 DOMAIN-SUFFIX,weixin.com,DIRECT
 DOMAIN-SUFFIX,weixin.qq.com,DIRECT
 DOMAIN-SUFFIX,weixinbridge.com,DIRECT
