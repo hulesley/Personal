@@ -1,6 +1,6 @@
 #!name=拦截HTTPDNS
 #!desc=拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
-#!author=可莉🅥, VirgilClyne，ChungW
+#!author=可莉🅥, VirgilClyne，ChungW（转写）
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png
 #!homepage=https://github.com/hulesley/Personal/blob/main/README.md
 #!date=2024-11-12 18:55:15
