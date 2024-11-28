@@ -5,7 +5,7 @@
 #!tag=去广告
 #!loon_version=3.2.1(749)
 #!homepage=https://github.com/hulesley/Personal/blob/main/README.md
-#!date=2024-11-05 08:18:38
+#!date=2024-11-28 00:00:00
 
 [Rule]
 # Outlook
@@ -24,7 +24,7 @@ DOMAIN-SUFFIX,doubleclick.net,REJECT
 # 虎牙直播开屏广告
 DOMAIN,business.msstatic.com,REJECT
 DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT
-URL-REGEX,^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$,REJECT
+URL-REGEX,"^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$",REJECT
 # 中国联通
 DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
 # 中国电信
@@ -35,8 +35,8 @@ DOMAIN,adshows.21cn.com,REJECT
 IP-CIDR,122.229.8.47/32,REJECT,no-resolve
 IP-CIDR,122.229.29.89/32,REJECT,no-resolve
 # 快递100
-URL-REGEX,^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do,REJECT-TINYGIF
-URL-REGEX,^http:\/\/p\.kuaidi100\.com\/advertisement\/,REJECT-TINYGIF
+URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do",REJECT-TINYGIF
+URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/advertisement\/",REJECT-TINYGIF
 # 亲邻开门
 DOMAIN,mall-dsp2.qinlinkeji.com,REJECT
 DOMAIN,mallapi2.qinlinkeji.com,REJECT
@@ -68,9 +68,9 @@ DOMAIN,open-pixon.ads-pixiv.net,REJECT
 ^http:\/\/img\.allahall\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg - reject
 ^http:\/\/img\.allahall\.com\/img\/5\/6cb2aa237ce1f65944aa1ecb29fbdeef\.jpg - reject
 ^http:\/\/img\.allahall\.com\/img\/59\/6a13a75dfe46ebfdac96bd27ef098885\.jpg - reject
-# 拼多多 //api.pinduoduo.com, api.yangkeduo.com
+# 拼多多 //api.pinduoduo.com,api.yangkeduo.com
 ^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
-# 闲鱼 //gw.alicdn.com, acs.m.taobao.com
+# 闲鱼 //gw.alicdn.com,acs.m.taobao.com
 ^https:\/\/gw\.alicdn\.com\/mt\/ - reject
 ^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
 ^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} - reject
@@ -156,7 +156,7 @@ DOMAIN,open-pixon.ads-pixiv.net,REJECT
 # 深圳通
 ^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do data-type=text data=" " status-code=200
 
-# 埋堆堆 @Kuraki //sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sdk1xyajs.data.kuiniuca.com, conf-darwin.xycdn.com, *.ubixioe.com
+# 埋堆堆 @Kuraki //sfo.mddcloud.com.cn,mob.mddcloud.com.cn,toblog.ctobsnssdk.com,t-dsp.pinduoduo.com,mobads-pre-config.cdn.bcebos.com,sdk1xyajs.data.kuiniuca.com,conf-darwin.xycdn.com,*.ubixioe.com
 ^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList data-type=text data="{}" status-code=200
 
 ^https?:\/\/t-dsp\.pinduoduo\.com data-type=text data=" " status-code=200
@@ -188,9 +188,6 @@ DOMAIN,open-pixon.ads-pixiv.net,REJECT
 
 # 站酷 - 开屏广告
 ^https:\/\/api\.zcool\.com\.cn\/v\d\.\d\.\d/common\/open-screen data-type=text data="{}" status-code=200
-
-# 下厨房 - 开屏广告
-^https:\/\/api\.xiachufang\.com\/v2\/ad\/ data-type=text data="{}" status-code=200
 
 # 懒饭 - 开屏广告
 ^https:\/\/lanfanapp\.com\/api\/v1\/ads\/ data-type=text data="{}" status-code=200
