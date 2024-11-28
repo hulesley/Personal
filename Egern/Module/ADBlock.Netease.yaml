@@ -6,7 +6,7 @@
 #!tag=去广告
 #!loon_version=3.2.1(749)
 #!homepage=https://github.com/hulesley/Personal/blob/main/README.md
-#!date=2024-10-11 07:22:12
+#!date=2024-11-28 00:00:00
 
 [Rule]
 DOMAIN,httpdns.music.163.com,REJECT
@@ -14,13 +14,13 @@ DOMAIN,httpdns.n.netease.com,REJECT
 DOMAIN,iadmat.nosdn.127.net,REJECT
 DOMAIN,iadmatapk.nosdn.127.net,REJECT
 DOMAIN,iadmusicmat.music.126.net,REJECT
-# DOMAIN, iadmusicmatvideo.music.126.net, REJECT
+# DOMAIN,iadmusicmatvideo.music.126.net,REJECT
 DOMAIN-SUFFIX,163jiasu.com,REJECT
 
 [Header Rewrite]
 # 新版加密通用处理
-^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(?:batch|v2\/resource\/comment\/floor\/get|homepage\/block\/page|link\/home\/framework\/tab|link\/page\/rcmd\/block\/resource\/multi\/refresh|link\/page\/rcmd\/resource\/show|user\/follow\/users\/mixed\/get) header-replace x-aeapi false
-^https?:\/\/interface\d?\.music\.163\.com\/w?eapi\/(?:activity\/bonus\/playpage\/time\/query|resource-exposure\/|search\/(?:chart\/|default\/|rcmd\/keyword\/|specialkeyword\/)) header-del x-aeapi
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(?:batch|v2\/resource\/comment\/floor\/get|homepage\/block\/page|link\/home\/framework\/tab|link\/page\/rcmd\/block\/resource\/multi\/refresh|link\/page\/rcmd\/resource\/show|user\/follow\/users\/mixed\/get) header-replace 'x-aeapi' 'false'
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/w?eapi\/(?:activity\/bonus\/playpage\/time\/query|resource-exposure\/|search\/(?:chart\/|default\/|rcmd\/keyword\/|specialkeyword\/)) header-del 'x-aeapi'
 
 [Map Local]
 # 开屏广告
