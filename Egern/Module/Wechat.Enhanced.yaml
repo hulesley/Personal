@@ -1,6 +1,6 @@
 #!name=WeChat增强
 #!desc=DNS分流，内置WeChat分流，广告过滤(更新时间2024/10/29)，新增外部链接解锁（更新时间2024/11/2）
-#!author=ld2j,RuCu6,可莉🅥,VirgilClyne,zZPiglet,QingRex,ChungW（转写）
+#!author=ld2j,RuCu6,可莉🅥,VirgilClyne,zZPiglet,QingRex,ChungW
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weixin.png
 #!openUrl=https://apps.apple.com/app/id414478124
 #!arguments=Proxy:DIRECT
