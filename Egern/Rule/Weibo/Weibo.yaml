@@ -1,0 +1,11 @@
+# 规则名称：Weibo
+# 规则统计：总数量=4
+# 规则统计：DOMAIN-SUFFIX 数量=3
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_suffix_set:
+- weibo.cn
+- weibo.com
+- weibocdn.com
+domain_keyword_set:
+- weibo

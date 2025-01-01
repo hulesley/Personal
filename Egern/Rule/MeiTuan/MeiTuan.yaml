@@ -1,0 +1,12 @@
+# 规则名称：MeiTuan
+# 规则统计：总数量=7
+# 规则统计：DOMAIN-SUFFIX 数量=7
+
+domain_suffix_set:
+- dianping.com
+- maoyan.com
+- meituan.com
+- meituan.net
+- mtyun.com
+- neixin.cn
+- sankuai.com

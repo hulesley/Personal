@@ -1,0 +1,11 @@
+# 规则名称：Gog
+# 规则统计：总数量=4
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=3
+
+domain_set:
+- gog.salesmanago.com
+domain_suffix_set:
+- gog-statics.com
+- gog.com
+- gog.qtlglb.com

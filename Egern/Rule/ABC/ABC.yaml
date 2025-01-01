@@ -1,0 +1,11 @@
+# 规则名称：ABC
+# 规则统计：总数量=6
+# 规则统计：DOMAIN-SUFFIX 数量=6
+
+domain_suffix_set:
+- 95599.cn
+- abchina.com
+- bscabank.com
+- openaboc.cn
+- openaboc.com
+- openaboc.com.cn

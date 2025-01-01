@@ -1,0 +1,12 @@
+# 规则名称：GoogleDrive
+# 规则统计：总数量=5
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=4
+
+domain_set:
+- www.googleapis.com
+domain_suffix_set:
+- docs.google.com
+- drive.google.com
+- googledrive.com
+- googleusercontent.com

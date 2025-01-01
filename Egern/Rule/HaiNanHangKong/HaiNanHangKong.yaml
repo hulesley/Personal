@@ -1,0 +1,13 @@
+# 规则名称：HaiNanHangKong
+# 规则统计：总数量=6
+# 规则统计：DOMAIN-SUFFIX 数量=5
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_suffix_set:
+- 10044.cn
+- hainanairlines.com
+- hnacargo.com
+- hnair.com
+- hnair.net
+domain_keyword_set:
+- hnagroup

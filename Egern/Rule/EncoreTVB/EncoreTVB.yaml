@@ -1,0 +1,12 @@
+# 规则名称：EncoreTVB
+# 规则统计：总数量=5
+# 规则统计：DOMAIN 数量=4
+# 规则统计：DOMAIN-SUFFIX 数量=1
+
+domain_set:
+- bcbolt446c5271-a.akamaihd.net
+- content.jwplatform.com
+- edge.api.brightcove.com
+- videos-f.jwpsrv.com
+domain_suffix_set:
+- encoretvb.com

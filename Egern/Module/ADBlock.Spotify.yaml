@@ -1,0 +1,23 @@
+name: Spotify去广告
+description: 过滤Spotify播放广告，移除随机播放，恢复歌手和专辑列表的正常展示。建议重新登录并清除缓存，且音质不能设置为超高，仅建议iOS 15及以上设备使用。
+open_url: https://apps.apple.com/app/id324684580
+author: app2smile,可莉🅥
+homepage: https://github.com/luestr/ProxyResource/blob/main/README.md
+icon: https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png
+scriptings:
+- http_request:
+    name: JSON处理
+    match: ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/
+    script_url: https://kelee.one/Resource/Script/Spotify/Spotify_remove_ads.js
+    timeout: 10
+- http_response:
+    name: Proto处理
+    match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
+    script_url: https://kelee.one/Resource/Script/Spotify/Spotify_proto.js
+    timeout: 10
+    body_required: true
+    binary_body: true
+mitm:
+  hostnames:
+    includes:
+    - spclient.wg.spotify.com

@@ -1,0 +1,10 @@
+# 规则名称：ITV
+# 规则统计：总数量=3
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=2
+
+domain_set:
+- itvpnpmobile-a.akamaihd.net
+domain_suffix_set:
+- itv.com
+- itvstatic.com

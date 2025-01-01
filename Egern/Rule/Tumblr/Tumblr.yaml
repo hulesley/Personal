@@ -1,0 +1,8 @@
+# 规则名称：Tumblr
+# 规则统计：总数量=3
+# 规则统计：DOMAIN-SUFFIX 数量=3
+
+domain_suffix_set:
+- tmblr.co
+- tumblr.co
+- tumblr.com

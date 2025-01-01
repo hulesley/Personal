@@ -1,0 +1,9 @@
+# 规则名称：Collabora
+# 规则统计：总数量=4
+# 规则统计：DOMAIN-SUFFIX 数量=4
+
+domain_suffix_set:
+- collabora.co.uk
+- collabora.com
+- collabora.org
+- collaboraoffice.com

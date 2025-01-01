@@ -1,0 +1,12 @@
+# 规则名称：AMP
+# 规则统计：总数量=5
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=4
+
+domain_set:
+- amp.akamaized.net
+domain_suffix_set:
+- amp.dev
+- ampproject.com
+- ampproject.net
+- ampproject.org

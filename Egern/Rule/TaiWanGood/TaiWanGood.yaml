@@ -1,0 +1,9 @@
+# 规则名称：TaiWanGood
+# 规则统计：总数量=2
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=1
+
+domain_set:
+- hamifans.emome.net
+domain_suffix_set:
+- skyking.com.tw

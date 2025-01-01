@@ -1,0 +1,6 @@
+# 规则名称：GoogleVoice
+# 规则统计：总数量=1
+# 规则统计：DOMAIN 数量=1
+
+domain_set:
+- lens.l.google.com

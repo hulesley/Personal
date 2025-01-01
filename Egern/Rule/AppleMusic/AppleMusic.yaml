@@ -1,0 +1,16 @@
+# 规则名称：AppleMusic
+# 规则统计：总数量=9
+# 规则统计：DOMAIN 数量=6
+# 规则统计：DOMAIN-SUFFIX 数量=3
+
+domain_set:
+- aod-ssl.itunes.apple.com
+- aod.itunes.apple.com
+- audio-ssl.itunes.apple.com
+- audio.itunes.apple.com
+- mvod.itunes.apple.com
+- streamingaudio.itunes.apple.com
+domain_suffix_set:
+- applemusic.com
+- blobstore.apple.com
+- music.apple.com

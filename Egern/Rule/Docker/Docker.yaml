@@ -1,0 +1,14 @@
+# 规则名称：Docker
+# 规则统计：总数量=7
+# 规则统计：DOMAIN 数量=3
+# 规则统计：DOMAIN-SUFFIX 数量=4
+
+domain_set:
+- d1q6f0aelx0por.cloudfront.net
+- d2wy8f7a9ursnm.cloudfront.net
+- d36jcksde1wxzq.cloudfront.net
+domain_suffix_set:
+- compose-spec.io
+- docker.com
+- docker.io
+- dockerhub.com

@@ -1,0 +1,11 @@
+# 规则名称：Teams
+# 规则统计：总数量=4
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=3
+
+domain_set:
+- teams.events.data.microsoft.com
+domain_suffix_set:
+- teams.cdn.live.net
+- teams.live.com
+- teams.microsoft.com

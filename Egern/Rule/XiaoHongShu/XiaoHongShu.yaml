@@ -1,0 +1,9 @@
+# 规则名称：XiaoHongShu
+# 规则统计：总数量=4
+# 规则统计：DOMAIN-SUFFIX 数量=4
+
+domain_suffix_set:
+- fengkongcloud.com
+- xhscdn.com
+- xhscdn.net
+- xiaohongshu.com

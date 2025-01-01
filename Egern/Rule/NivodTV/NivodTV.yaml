@@ -1,0 +1,15 @@
+# 规则名称：NivodTV
+# 规则统计：总数量=8
+# 规则统计：DOMAIN-SUFFIX 数量=7
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_suffix_set:
+- biggggg.com
+- mudvod.tv
+- nbys.tv
+- nbys1.tv
+- nbyy.tv
+- newpppp.com
+- vod360.net
+domain_keyword_set:
+- nivod

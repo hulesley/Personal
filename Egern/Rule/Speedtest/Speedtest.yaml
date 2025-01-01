@@ -1,0 +1,12 @@
+# 规则名称：Speedtest
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=4
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_suffix_set:
+- fast.com
+- ooklaserver.net
+- speed.cloudflare.com
+- speed.dler.io
+domain_keyword_set:
+- speedtest

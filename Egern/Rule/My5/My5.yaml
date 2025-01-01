@@ -1,0 +1,10 @@
+# 规则名称：My5
+# 规则统计：总数量=3
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=2
+
+domain_set:
+- d349g9zuie06uo.cloudfront.net
+domain_suffix_set:
+- channel5.com
+- my5.tv

@@ -1,0 +1,12 @@
+# 规则名称：ALJazeera
+# 规则统计：总数量=7
+# 规则统计：DOMAIN-SUFFIX 数量=7
+
+domain_suffix_set:
+- ajplus.net
+- aljazeera.com
+- aljazeera.net
+- palestineremix.com
+- sarajevopodopsadom.com
+- srebrenica360.com
+- syhacked.com

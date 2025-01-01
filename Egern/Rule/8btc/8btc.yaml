@@ -1,0 +1,10 @@
+# 规则名称：8btc
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- 8btc.com
+- bystack.com
+- chainnode.com
+- matpool.com
+- matpool.net

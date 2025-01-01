@@ -1,0 +1,700 @@
+name: 广告平台拦截器
+description: 此插件是所有去广告插件的基础，只针对广告平台处理。你依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部。\n支持拦截腾讯、字节跳动、快手、百度、邑盟、倍孜、艾狄墨搏、袤博、极光、个推、友盟、阿里、优比客思、秒针、网易、美团、小米、京东、天目、讯飞、泛连、锐讯灵通、聚次方、美数、嗨量、钧云、变现猫、章鱼、分秒、泰之菩、翼信、快易、数萤技术、方麟、益起、上量优选、新义互联、腾云天下、布里奇、塔酷、丽声、SupersonicAds、APPSAD等广告平台的广告请求，更适合iOS平台的应用。
+author: 可莉🅥
+icon: https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
+rules:
+- url_regex:
+    match: '"^http:\/\/p\d+-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|web\.business\.image)\/"'
+    policy: REJECT
+- domain:
+    match: mon.zijieapi.com
+    policy: REJECT
+- domain:
+    match: lf-ad-ies.bytecdn.cn
+    policy: REJECT
+- domain:
+    match: i.snssdk.com
+    policy: REJECT
+- domain:
+    match: is.snssdk.com
+    policy: REJECT
+- domain:
+    match: bds.snssdk.com
+    policy: REJECT
+- domain:
+    match: dm.bytedance.com
+    policy: REJECT
+- domain:
+    match: dm.pstatp.com
+    policy: REJECT
+- domain:
+    match: dm.toutiao.com
+    policy: REJECT
+- domain:
+    match: log.snssdk.com
+    policy: REJECT
+- domain:
+    match: s3a.pstatp.com
+    policy: REJECT
+- domain:
+    match: sdfp.snssdk.com
+    policy: REJECT
+- domain:
+    match: tosv.boe.byted.org
+    policy: REJECT
+- domain:
+    match: tosv.byted.org
+    policy: REJECT
+- domain:
+    match: extlog.snssdk.com
+    policy: REJECT
+- domain:
+    match: mssdk-bu.bytedance.com
+    policy: REJECT
+- domain:
+    match: toblog.ctobsnssdk.com
+    policy: REJECT
+- domain:
+    match: mssdk.volces.com
+    policy: REJECT
+- domain:
+    match: pangolin.snssdk.com
+    policy: REJECT
+- domain:
+    match: gromore.pangolin-sdk-toutiao.com
+    policy: REJECT
+- domain:
+    match: ether-pack.pangolin-sdk-toutiao.com
+    policy: REJECT
+- domain_keyword:
+    match: -ad-sign.byteimg.com
+    policy: REJECT
+- domain_keyword:
+    match: api-access.pangolin-sdk-toutiao
+    policy: REJECT
+- domain_keyword:
+    match: log-api.pangolin-sdk-toutiao
+    policy: REJECT
+- domain_keyword:
+    match: -ad.byteoversea.com
+    policy: REJECT
+- domain_keyword:
+    match: video-cn.snssdk.com
+    policy: REJECT
+- domain_keyword:
+    match: asiad.byteactivity
+    policy: REJECT
+- domain_keyword:
+    match: iflyad.bj.openstorage.cn
+    policy: REJECT
+- domain_keyword:
+    match: bjimp.voiceads.cn
+    policy: REJECT
+- domain:
+    match: sdk.1rtb.net
+    policy: REJECT
+- domain:
+    match: cdn.1rtb.com
+    policy: REJECT
+- domain:
+    match: adx.halomobi.com
+    policy: REJECT
+- domain:
+    match: api.htp.hubcloud.com.cn
+    policy: REJECT
+- domain:
+    match: res1.hubcloud.com.cn
+    policy: REJECT
+- domain:
+    match: sdktmp.hubcloud.com.cn
+    policy: REJECT
+- domain:
+    match: v.adx.hubcloud.com.cn
+    policy: REJECT
+- domain:
+    match: config.inmobi.cn
+    policy: REJECT
+- domain:
+    match: ztoken.uyunad.com
+    policy: REJECT
+- domain:
+    match: aaid.uyunad.com
+    policy: REJECT
+- domain:
+    match: yumao.puata.info
+    policy: REJECT
+- domain:
+    match: gdfp.gifshow.com
+    policy: REJECT
+- domain:
+    match: open.e.kuaishou.com
+    policy: REJECT
+- domain:
+    match: adtrack.e.kuaishou.com
+    policy: REJECT
+- domain_suffix:
+    match: adukwai.com
+    policy: REJECT
+- domain:
+    match: init.supersonicads.com
+    policy: REJECT
+- domain:
+    match: st.appsad.cn
+    policy: REJECT
+- domain:
+    match: sdk.beizi.biz
+    policy: REJECT
+- domain:
+    match: api-htp.beizi.biz
+    policy: REJECT
+- domain:
+    match: admaster.com.cn
+    policy: REJECT
+- domain_suffix:
+    match: miaozhen.com
+    policy: REJECT
+- domain:
+    match: monitor.ssp.admobile.top
+    policy: REJECT
+- domain:
+    match: sdk.ssp.admobile.top
+    policy: REJECT
+- domain:
+    match: ax.admobile.top
+    policy: REJECT
+- domain:
+    match: jump.admobile.top
+    policy: REJECT
+- domain_suffix:
+    match: admobile.top
+    policy: REJECT
+- domain:
+    match: api-c.dutils.com
+    policy: REJECT
+- domain:
+    match: api-d.dutils.com
+    policy: REJECT
+- domain:
+    match: api-p0.yksdks.com
+    policy: REJECT
+- domain:
+    match: cache-verify.dutils.com
+    policy: REJECT
+- domain:
+    match: cdn-api-verify.dutils.com
+    policy: REJECT
+- domain:
+    match: devs-data.dutils.com
+    policy: REJECT
+- domain:
+    match: log-verify.dutils.com
+    policy: REJECT
+- domain:
+    match: m.mpl.dutils.com
+    policy: REJECT
+- domain:
+    match: api.share.mob.com
+    policy: REJECT
+- domain:
+    match: api.verify.mob.com
+    policy: REJECT
+- domain:
+    match: log-verify.mob.com
+    policy: REJECT
+- domain:
+    match: sdk.push.mob.com
+    policy: REJECT
+- domain:
+    match: ali-stats.jpush.cn
+    policy: REJECT
+- domain:
+    match: ce3e75d5.jpush.cn
+    policy: REJECT
+- domain:
+    match: config-junion.jpush.cn
+    policy: REJECT
+- domain:
+    match: config.jpush.cn
+    policy: REJECT
+- domain:
+    match: fcapi-ipv6.jpush.cn
+    policy: REJECT
+- domain:
+    match: gd-stats.jpush.cn
+    policy: REJECT
+- domain:
+    match: s.jpush.cn
+    policy: REJECT
+- domain:
+    match: sdk.verification.jiguang.cn
+    policy: REJECT
+- domain:
+    match: sis-ipv6.jpush.cn
+    policy: REJECT
+- domain:
+    match: smartop-sdkapi.jiguang.cn
+    policy: REJECT
+- domain:
+    match: status-ipv6.jpush.cn
+    policy: REJECT
+- domain:
+    match: tsis.jpush.cn
+    policy: REJECT
+- domain:
+    match: user.jpush.cn
+    policy: REJECT
+- domain_suffix:
+    match: jiguang.cn
+    policy: REJECT
+- domain_suffix:
+    match: jpush.cn
+    policy: REJECT
+- domain_suffix:
+    match: jpush.io
+    policy: REJECT
+- domain:
+    match: afd.baidu.com
+    policy: REJECT
+- domain:
+    match: als.baidu.com
+    policy: REJECT
+- domain:
+    match: bgg.baidu.com
+    policy: REJECT
+- domain:
+    match: cpro.baidustatic.com
+    policy: REJECT
+- domain:
+    match: feed-image.baidu.com
+    policy: REJECT
+- domain:
+    match: click-bes.baidu.com
+    policy: REJECT
+- domain:
+    match: eclick.baidu.com
+    policy: REJECT
+- domain:
+    match: mobads-logs.baidu.com
+    policy: REJECT
+- domain:
+    match: mobads-pre-config.cdn.bcebos.com
+    policy: REJECT
+- domain:
+    match: mobads.baidu.com
+    policy: REJECT
+- domain:
+    match: nadvideo2.baidu.com
+    policy: REJECT
+- domain:
+    match: wn.pos.baidu.com
+    policy: REJECT
+- domain:
+    match: miniapp-ad.cdn.bcebos.com
+    policy: REJECT
+- domain_suffix:
+    match: union.baidu.cn
+    policy: REJECT
+- domain_suffix:
+    match: union.baidu.com
+    policy: REJECT
+- domain:
+    match: adsmind.gdtimg.com
+    policy: REJECT
+- domain:
+    match: adsmind.ugdtimg.com
+    policy: REJECT
+- domain:
+    match: c2.gdt.qq.com
+    policy: REJECT
+- domain:
+    match: huatuocode.huatuo.qq.com
+    policy: REJECT
+- domain:
+    match: info4.video.qq.com
+    policy: REJECT
+- domain:
+    match: info6.video.qq.com
+    policy: REJECT
+- domain:
+    match: ios.bugly.qq.com
+    policy: REJECT
+- domain:
+    match: pro.bugly.qq.com
+    policy: REJECT
+- domain:
+    match: ios.video.mpush.qq.com
+    policy: REJECT
+- domain:
+    match: mi.gdt.qq.com
+    policy: REJECT
+- domain:
+    match: otheve.beacon.qq.com
+    policy: REJECT
+- domain:
+    match: pgdt.gtimg.cn
+    policy: REJECT
+- domain:
+    match: pgdt.ugdtimg.com
+    policy: REJECT
+- domain:
+    match: qzs.gdtimg.com
+    policy: REJECT
+- domain:
+    match: qzs.qq.com
+    policy: REJECT
+- domain:
+    match: rmonitor.qq.com
+    policy: REJECT
+- domain:
+    match: sdk.e.qq.com
+    policy: REJECT
+- domain:
+    match: sdkconfig.video.qq.com
+    policy: REJECT
+- domain:
+    match: t.gdt.qq.com
+    policy: REJECT
+- domain:
+    match: tmead.y.qq.com
+    policy: REJECT
+- domain:
+    match: tmeadbak.y.qq.com
+    policy: REJECT
+- domain:
+    match: tmeadcomm.y.qq.com
+    policy: REJECT
+- domain:
+    match: tpns.qq.com
+    policy: REJECT
+- domain:
+    match: v.gdt.qq.com
+    policy: REJECT
+- domain:
+    match: v2.gdt.qq.com
+    policy: REJECT
+- domain:
+    match: win.gdt.qq.com
+    policy: REJECT
+- domain:
+    match: wup.imtt.qq.com
+    policy: REJECT
+- domain:
+    match: tpstelemetry.tencent.com
+    policy: REJECT
+- domain:
+    match: ii.gdt.qq.com
+    policy: REJECT
+- domain_keyword:
+    match: trace.qq.com
+    policy: REJECT
+- domain_keyword:
+    match: trace.video.qq.com
+    policy: REJECT
+- domain_suffix:
+    match: gdt.qq.com
+    policy: REJECT
+- domain_suffix:
+    match: l.qq.com
+    policy: REJECT
+- domain_suffix:
+    match: ugdtimg.com
+    policy: REJECT
+- ip_cidr:
+    match: 47.110.187.87/32
+    policy: REJECT
+    no_resolve: true
+- domain_suffix:
+    match: openinstall.io
+    policy: REJECT
+- domain:
+    match: b-gtc.getui.net
+    policy: REJECT
+- domain:
+    match: c-gtc.getui.net
+    policy: REJECT
+- domain:
+    match: c-hzgt2.getui.com
+    policy: REJECT
+- domain:
+    match: c-ido.getui.net
+    policy: REJECT
+- domain:
+    match: c-gtc.getui.net
+    policy: REJECT
+- domain:
+    match: dnms.getui.com
+    policy: REJECT
+- domain:
+    match: ido.getui.net
+    policy: REJECT
+- domain:
+    match: sdk-conf.getui.com
+    policy: REJECT
+- domain:
+    match: sdk-open-phone.getui.com
+    policy: REJECT
+- domain:
+    match: ido.gepush.com
+    policy: REJECT
+- domain_suffix:
+    match: mobileservice.cn
+    policy: REJECT
+- domain_suffix:
+    match: getui.com
+    policy: REJECT
+- domain_suffix:
+    match: igexin.com
+    policy: REJECT
+- domain:
+    match: cnlogs.umeng.com
+    policy: REJECT
+- domain:
+    match: errlog.umeng.com
+    policy: REJECT
+- domain:
+    match: errnewlog.umeng.com
+    policy: REJECT
+- domain:
+    match: ucc.umeng.com
+    policy: REJECT
+- domain:
+    match: ulogs.umeng.com
+    policy: REJECT
+- domain:
+    match: utoken.umeng.com
+    policy: REJECT
+- domain:
+    match: deeplink.umeng.com
+    policy: REJECT
+- domain:
+    match: aspect-upush.umeng.com
+    policy: REJECT
+- domain:
+    match: plbslog.umeng.com
+    policy: REJECT
+- domain:
+    match: log.umtrack.com
+    policy: REJECT
+- domain:
+    match: aaid.umeng.com
+    policy: REJECT
+- domain:
+    match: log.umsns.com
+    policy: REJECT
+- domain:
+    match: adtracker.adfunlink.com
+    policy: REJECT
+- domain:
+    match: sdk.tianmu.mobi
+    policy: REJECT
+- domain:
+    match: tracker.tianmu.mobi
+    policy: REJECT
+- domain:
+    match: e-u1.ubixioe.com
+    policy: REJECT
+- domain:
+    match: sdk-data.ubixioe.com
+    policy: REJECT
+- domain:
+    match: tower.ubixioe.com
+    policy: REJECT
+- domain:
+    match: tx-cfg-u1.ubixioe.com
+    policy: REJECT
+- domain:
+    match: tx-data-u1.ubixioe.com
+    policy: REJECT
+- domain:
+    match: ossgw.alicdn.com
+    policy: REJECT
+- domain:
+    match: ems.youku.com
+    policy: REJECT
+- domain:
+    match: hudong.alicdn.com
+    policy: REJECT
+- domain:
+    match: et.tanx.com
+    policy: REJECT
+- domain:
+    match: df.tanx.com
+    policy: REJECT
+- domain:
+    match: beacon-api.aliyuncs.com
+    policy: REJECT
+- domain:
+    match: adash.man.aliyuncs.com
+    policy: REJECT
+- domain:
+    match: applog.uc.cn
+    policy: REJECT
+- domain:
+    match: nex.163.com
+    policy: REJECT
+- domain:
+    match: iad.g.163.com
+    policy: REJECT
+- domain:
+    match: adx-bj.anythinktech.com
+    policy: REJECT
+- domain:
+    match: api.anythinktech.com
+    policy: REJECT
+- domain:
+    match: tk.anythinktech.com
+    policy: REJECT
+- domain:
+    match: da.anythinktech.com
+    policy: REJECT
+- domain:
+    match: gorgon.youdao.com
+    policy: REJECT
+- domain:
+    match: sdkconfig.ad.xiaomi.com
+    policy: REJECT
+- domain:
+    match: al-log.d.meituan.net
+    policy: REJECT
+- domain:
+    match: babel-statistics-android.d.meituan.net
+    policy: REJECT
+- domain:
+    match: maplocatesdksnapshot.d.meituan.net
+    policy: REJECT
+- domain:
+    match: metrics-picture.d.meituan.net
+    policy: REJECT
+- domain:
+    match: route-stats.d.meituan.net
+    policy: REJECT
+- domain:
+    match: dsp-x.jd.com
+    policy: REJECT
+- domain:
+    match: im-x.jd.com
+    policy: REJECT
+- domain:
+    match: xlog.jd.com
+    policy: REJECT
+- domain:
+    match: janapi.jd.com
+    policy: REJECT
+- domain:
+    match: api.mosspf.com
+    policy: REJECT
+- domain:
+    match: da.mosspf.com
+    policy: REJECT
+- domain:
+    match: mores.toponad.com
+    policy: REJECT
+- domain:
+    match: api.toponadss.com
+    policy: REJECT
+- domain:
+    match: da.toponadss.com
+    policy: REJECT
+- domain:
+    match: tk.toponadss.com
+    policy: REJECT
+- domain:
+    match: adx-os.toponadss.com
+    policy: REJECT
+- domain:
+    match: mores.motowoo.com
+    policy: REJECT
+- domain_suffix:
+    match: motowoo.com
+    policy: REJECT
+- domain:
+    match: guide2.bianxianmao.com
+    policy: REJECT
+- domain:
+    match: caid.adintl.cn
+    policy: REJECT
+- domain:
+    match: sv.adintl.cn
+    policy: REJECT
+- domain:
+    match: v.adintl.cn
+    policy: REJECT
+- domain:
+    match: oss.cdn.adintl.cn
+    policy: REJECT
+- domain:
+    match: adx.adtaipo.com
+    policy: REJECT
+- domain:
+    match: adx.yixin.im
+    policy: REJECT
+- domain:
+    match: adx.kuaiyiad.com
+    policy: REJECT
+- domain:
+    match: adreport.adtianmai.com
+    policy: REJECT
+- domain:
+    match: adxapi.readgps.com
+    policy: REJECT
+- domain:
+    match: t.fanglinad.com
+    policy: REJECT
+- domain:
+    match: trk1.17admob.com
+    policy: REJECT
+- domain:
+    match: nfy.slyxmobi.com
+    policy: REJECT
+- domain:
+    match: api.mobrtb.com
+    policy: REJECT
+- domain:
+    match: ssp.maplehaze.cn
+    policy: REJECT
+- domain_suffix:
+    match: lnk0.com
+    policy: REJECT
+- domain:
+    match: tk.bridgeoos.com
+    policy: REJECT
+- domain:
+    match: da.bridgeoos.com
+    policy: REJECT
+- domain:
+    match: api.bridgeoos.com
+    policy: REJECT
+- domain:
+    match: adx-os.bridgeoos.com
+    policy: REJECT
+- domain:
+    match: adx-sg-req.bridgeoos.com
+    policy: REJECT
+- domain_suffix:
+    match: bridgeoos.com
+    policy: REJECT
+- domain:
+    match: ad-evods.tianya.tv
+    policy: REJECT
+- domain:
+    match: adx.tuia.cn
+    policy: REJECT
+url_rewrites:
+- match: ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/images\.pinduoduo\.com\/mrk\/
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/images\.pinduoduo\.com\/marketing_api\/
+  location: http://reject/
+  status_code: 307
+mitm:
+  hostnames:
+    includes:
+    - video-dsp.pddpic.com
+    - t-dsp.pinduoduo.com
+    - images.pinduoduo.com

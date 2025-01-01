@@ -1,0 +1,9 @@
+# NAME: Tinder
+# REPO: https://github.com/hulesley/Personal
+# UPDATED: 2024-10-21 02:29:37
+# DOMAIN: 4
+# TOTAL: 4
+DOMAIN,data.gotinder.com
+DOMAIN,keepalive.gotinder.com
+DOMAIN,images-ssl.gotinder.com
+DOMAIN,api.gotinder.com

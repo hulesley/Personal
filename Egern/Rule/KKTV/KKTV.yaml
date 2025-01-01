@@ -1,0 +1,11 @@
+# 规则名称：KKTV
+# 规则统计：总数量=4
+# 规则统计：DOMAIN 数量=2
+# 规则统计：DOMAIN-SUFFIX 数量=2
+
+domain_set:
+- kktv-theater.kk.stream
+- theater-kktv.cdn.hinet.net
+domain_suffix_set:
+- kktv.com.tw
+- kktv.me

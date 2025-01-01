@@ -1,0 +1,10 @@
+# 规则名称：Comodo
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- comodo.com
+- comodoca.com
+- comodoca2.com
+- comodoca3.com
+- comodoca4.com

@@ -1,0 +1,397 @@
+name: 广告过滤器
+description: 转自可莉自用的广告过滤器
+author: 可莉🅥
+icon: https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
+rules:
+- domain:
+    match: acdn.adnxs.com
+    policy: REJECT
+- domain:
+    match: mediation.adnxs.com
+    policy: REJECT
+- domain:
+    match: sin3-ib.adnxs.com
+    policy: REJECT
+- domain:
+    match: sdkconfig.ad.xiaomi.com
+    policy: REJECT
+- domain:
+    match: data.mistat.xiaomi.com
+    policy: REJECT
+- domain:
+    match: tracking.intl.miui.com
+    policy: REJECT
+- domain:
+    match: sdkconfig.ad.xiaomi.com
+    policy: REJECT
+- domain_suffix:
+    match: doubleclick-cn.net
+    policy: REJECT
+- domain_suffix:
+    match: doubleclick.net
+    policy: REJECT
+- domain:
+    match: business.msstatic.com
+    policy: REJECT
+- domain_suffix:
+    match: v1d.szbdyd.com
+    policy: REJECT
+- url_regex:
+    match: '"^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$"'
+    policy: REJECT
+- domain_suffix:
+    match: m1.ad.10010.com
+    policy: REJECT
+- domain:
+    match: ad.21cn.com
+    policy: REJECT
+- domain:
+    match: ad.k.21cn.com
+    policy: REJECT
+- domain:
+    match: admarket.21cn.com
+    policy: REJECT
+- domain:
+    match: adshows.21cn.com
+    policy: REJECT
+- ip_cidr:
+    match: 122.229.8.47/32
+    policy: REJECT
+    no_resolve: true
+- ip_cidr:
+    match: 122.229.29.89/32
+    policy: REJECT
+    no_resolve: true
+- url_regex:
+    match: '"^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do"'
+    policy: REJECT
+- url_regex:
+    match: '"^http:\/\/p\.kuaidi100\.com\/advertisement\/"'
+    policy: REJECT
+- domain:
+    match: mall-dsp2.qinlinkeji.com
+    policy: REJECT
+- domain:
+    match: mallapi2.qinlinkeji.com
+    policy: REJECT
+- domain:
+    match: open-pixon.ads-pixiv.net
+    policy: REJECT
+url_rewrites:
+- match: ^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/cdn\.web\.chelaile\.net\.cn\/info-flow\/index\.html
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/
+  location: http://reject/
+  status_code: 307
+- match: ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner
+  location: http://reject/
+  status_code: 307
+- match: ^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\?
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.dailmo\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.dailmo\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.dailmo\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.dailmo\.com\/img\/5\/6cb2aa237ce1f65944aa1ecb29fbdeef\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.allahall\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.allahall\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.allahall\.com\/img\/6\/90585d9e96c73dd49644af57d8501624\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.allahall\.com\/img\/5\/6cb2aa237ce1f65944aa1ecb29fbdeef\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/img\.allahall\.com\/img\/59\/6a13a75dfe46ebfdac96bd27ef098885\.jpg
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/gw\.alicdn\.com\/mt\/
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4}
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4}
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native
+  location: http://reject/
+  status_code: 307
+- match: ^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit)
+  location: http://reject/
+  status_code: 307
+- match: ^https?:\/\/tower\.ubixioe\.com\/mob\/mediation
+  location: http://reject/
+  status_code: 307
+- match: ^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/yesList
+  location: http://reject/
+  status_code: 307
+- match: ^https:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage
+  location: http://reject/
+  status_code: 307
+map_locals:
+- match: ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner)
+  status_code: 200
+  body: '{}'
+- match: ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start
+  status_code: 200
+  body: ' '
+- match: ^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/
+  status_code: 200
+  body: ' '
+- match: ^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen
+  status_code: 200
+  body: ' '
+- match: ^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\?
+  status_code: 200
+  body: ' '
+- match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\?
+  status_code: 200
+  body: ''
+- match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\?
+  status_code: 200
+  body: ''
+- match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\?
+  status_code: 200
+  body: ''
+- match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\?
+  status_code: 200
+  body: ''
+- match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\?
+  status_code: 200
+  body: ''
+- match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\?
+  status_code: 200
+  body: ''
+- match: ^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig
+  status_code: 200
+  body: ' '
+- match: ^http:\/\/app\.zhoudamozi\.com\/ad\/.+
+  status_code: 200
+  body: ' '
+- match: ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\?
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\?
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\?
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\?
+  status_code: 200
+  body: '{}'
+- match: ^https?:\/\/us\.l\.qq\.com\/exapp
+  status_code: 200
+  body: ' '
+- match: ^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/dict\.youdao\.com\/homepage\/tile
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/dict\.youdao\.com\/commonsearch
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/dict\.youdao\.com\/dictusertask\/system
+  status_code: 200
+  body: '{}'
+- match: ^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do
+  status_code: 200
+  body: ' '
+- match: ^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList
+  status_code: 200
+  body: '{}'
+- match: ^https?:\/\/t-dsp\.pinduoduo\.com
+  status_code: 200
+  body: ' '
+- match: ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/preload\.php
+  status_code: 200
+  body: ' '
+- match: ^http?:\/\/sfo\.mddcloud\.com\.cn\/api\/v2\/sfo\/popup_displays?
+  status_code: 200
+  body: '{}'
+- match: ^https?:\/\/toblog\.ctobsnssdk\.com
+  status_code: 200
+  body: ' '
+- match: ^https?:\/\/conf-darwin\.xycdn\.com
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/gw\.chuangkit\.com\/team\/app\/common\/ad\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/v2\/delivery-pits\/ios-splash\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.jpg\?imageMogr2\/quality\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.(jpg|png)\?imageMogr2\/thumbnail\/(860x0|!165x165|!1049x1169)
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/api\.zcool\.com\.cn\/v\d\.\d\.\d/common\/open-screen
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/lanfanapp\.com\/api\/v1\/ads\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_DEVICE
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/api\.flydigi\.com\/android\/v2\/ad
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/info\.mina\.xiaoaisound\.com\/payGuide\/userCenter
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/info\.mina\.xiaoaisound\.com\/advertise\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/api\.xiangji\.qq\.com\/splash$
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/cdn\.cmgadx\.com\/sdk\/pool\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/qadx\.qinlinad\.com\/ad\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_WATCH_SPORT
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_HEALTH_DEVICE_TAB_PAGE
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.life\.popup\.get\/
+  status_code: 200
+  body: '{}'
+- match: ^https:\/\/d\.socdm\.com\/adsv\/
+  status_code: 200
+  body: '{}'
+mitm:
+  hostnames:
+    includes:
+    - api.zcool.com.cn
+    - acs.m.goofish.com
+    - acs.m.taobao.com
+    - api-access.pangolin-sdk-toutiao*.com
+    - api-access.pangolin-sdk-toutiao.com
+    - api-mifit*.huami.com
+    - api-mifit-cn2.huami.com
+    - api-mifit.huami.com
+    - api-overmind.youdao.com
+    - api.ahmobile.cn
+    - api.angkeduo.com
+    - api.jr.mi.com
+    - api.m.mi.com
+    - api.pinduoduo.com
+    - api.wfdata.club
+    - apiwz.midukanshu.com
+    - app.zhoudamozi.com
+    - cdke.youdao.com
+    - conf-darwin.xycdn.com
+    - dict.youdao.com
+    - ecard.shenzhentong.com
+    - ether-pack.pangolin-sdk-toutiao.com
+    - gromore.pangolin-sdk-toutiao.com
+    - gw.alicdn.com
+    - gw.chuangkit.com
+    - hfapp-service.qweather.net
+    - home.mi.com
+    - home.umetrip.com
+    - img.allahall.com
+    - img.dailmo.com
+    - iyes.youku.com
+    - lfd?-analytics.bytescm.com
+    - lfd?-cdn-tos.bytescm.com
+    - m.qianbao.qq.com
+    - mercury-gateway.ixiaochuan.cn
+    - mob.mddcloud.com.cn
+    - mobads-pre-config.cdn.bcebos.com
+    - p0.pipi.cn
+    - qiye.gaoding.com
+    - sdk1xyajs.data.kuiniuca.com
+    - sfd?-fe-tos.pglstatp-toutiao.com
+    - sfo.mddcloud.com.cn
+    - shopapi.io.mi.com
+    - shealthyapi.senssun.com
+    - t-dsp.pinduoduo.com
+    - toblog.ctobsnssdk.com
+    - tower.ubixioe.com
+    - umerp.umetrip.com
+    - us.l.qq.com
+    - lanfanapp.com
+    - api.xiachufang.com
+    - info.mina.xiaoaisound.com
+    - api.xiangji.qq.com
+    - video-dsp.pddpic.com
+    - images.pinduoduo.com
+    - client.app.coc.10086.cn
+    - cdn.cmgadx.com
+    - qadx.qinlinad.com
+    - watch.iot.mi.com
+    - cdn.web.chelaile.net.cn
+    - d.socdm.com

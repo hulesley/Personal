@@ -1,0 +1,10 @@
+# 规则名称：PChomeTW
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- ecapi-pchome.cdn.hinet.net
+- ecimg.tw
+- pchome.com.tw
+- pchomepay.com.tw
+- pcloud.tw

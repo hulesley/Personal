@@ -1,0 +1,12 @@
+# 规则名称：Anjuke
+# 规则统计：总数量=7
+# 规则统计：DOMAIN-SUFFIX 数量=7
+
+domain_suffix_set:
+- aifang.com
+- aifcdn.com
+- ajkinclude.com
+- anjuke.cn
+- anjuke.com
+- anjukestatic.com
+- jikejia.cn

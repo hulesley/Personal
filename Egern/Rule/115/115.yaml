@@ -1,0 +1,17 @@
+# 规则名称：115
+# 规则统计：总数量=10
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=9
+
+domain_set:
+- fhnfile.oss-cn-shenzhen.aliyuncs.com
+domain_suffix_set:
+- 115.com
+- 115cdn.com
+- 115cdn.net
+- 115img.com
+- 116cd.cn
+- 116cd.com
+- 116cd.net
+- anxia.com
+- sq.cc

@@ -1,0 +1,16 @@
+# 规则名称：Download
+# 规则统计：总数量=7
+# 规则统计：DOMAIN-SUFFIX 数量=1
+# 规则统计：DOMAIN-KEYWORD 数量=5
+# 规则统计：URL-REGEX 数量=1
+
+domain_suffix_set:
+- qbittorrent.org
+domain_keyword_set:
+- aria2
+- thunder
+- xlliveud
+- xunlei
+- yunpan
+url_regex_set:
+- 'assets\d+\.xboxlive\.(com|cn)'

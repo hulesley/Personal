@@ -1,0 +1,12 @@
+# 规则名称：WeiZhiYunDong
+# 规则统计：总数量=5
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=4
+
+domain_set:
+- weizhiyundong.list
+domain_suffix_set:
+- dicom365.com
+- dycom365.com
+- wedcm.com
+- weiyunyingxiang.com

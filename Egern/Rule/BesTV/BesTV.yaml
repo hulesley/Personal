@@ -1,0 +1,12 @@
+# 规则名称：BesTV
+# 规则统计：总数量=7
+# 规则统计：DOMAIN-SUFFIX 数量=7
+
+domain_suffix_set:
+- bbtv.cn
+- bestv.com.cn
+- bestvcdn.cn
+- bestvcdn.com
+- bestvcdn.com.cn
+- bestvcdn.net
+- smgbb.cn

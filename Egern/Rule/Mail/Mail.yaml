@@ -1,0 +1,19 @@
+# 规则名称：Mail
+# 规则统计：总数量=12
+# 规则统计：DOMAIN 数量=9
+# 规则统计：DOMAIN-SUFFIX 数量=3
+
+domain_set:
+- apple.imap.mail.yahoo.com
+- apple.smtp.mail.yahoo.com
+- imap-mail.outlook.com
+- imap.gmail.com
+- outlook.office365.com
+- pop.gmail.com
+- smtp-mail.outlook.com
+- smtp.gmail.com
+- smtp.office365.com
+domain_suffix_set:
+- imap.yandex.com
+- m.hotmail.com
+- smtp.yandex.com

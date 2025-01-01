@@ -1,0 +1,12 @@
+# 规则名称：Embl
+# 规则统计：总数量=7
+# 规则统计：DOMAIN-SUFFIX 数量=7
+
+domain_suffix_set:
+- ebi.ac.uk
+- embl-hamburg.de
+- embl.de
+- embl.fr
+- embl.it
+- embl.org
+- emblstatic.net

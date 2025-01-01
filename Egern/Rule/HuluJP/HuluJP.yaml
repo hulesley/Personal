@@ -1,0 +1,10 @@
+# 规则名称：HuluJP
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- happyon.jp
+- hjholdings.jp
+- hulu.jp
+- streaks.jp
+- yb.uncn.jp

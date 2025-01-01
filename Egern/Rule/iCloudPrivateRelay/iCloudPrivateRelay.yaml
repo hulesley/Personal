@@ -1,0 +1,13 @@
+# 规则名称：iCloudPrivateRelay
+# 规则统计：总数量=6
+# 规则统计：DOMAIN 数量=4
+# 规则统计：DOMAIN-SUFFIX 数量=2
+
+domain_set:
+- mask-api.fe.apple-dns.net
+- mask-api.icloud.com
+- mask-t.apple-dns.net
+- mask.apple-dns.net
+domain_suffix_set:
+- mask-h2.icloud.com
+- mask.icloud.com

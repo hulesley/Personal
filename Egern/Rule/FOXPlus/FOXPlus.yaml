@@ -1,0 +1,14 @@
+# 规则名称：FOXPlus
+# 规则统计：总数量=7
+# 规则统计：DOMAIN 数量=6
+# 规则统计：DOMAIN-SUFFIX 数量=1
+
+domain_set:
+- cdn-fox-networks-group-green.akamaized.net
+- d3cv4a9a9wh0bt.cloudfront.net
+- foxsports01-i.akamaihd.net
+- foxsports02-i.akamaihd.net
+- foxsports03-i.akamaihd.net
+- staticasiafox.akamaized.net
+domain_suffix_set:
+- foxplus.com

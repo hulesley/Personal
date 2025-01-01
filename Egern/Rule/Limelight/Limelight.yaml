@@ -1,0 +1,13 @@
+# 规则名称：Limelight
+# 规则统计：总数量=8
+# 规则统计：DOMAIN-SUFFIX 数量=8
+
+domain_suffix_set:
+- delvenetworks.com
+- limelight.com
+- lldns.net
+- llnw-trials.com
+- llnw.com
+- llnw.net
+- llnwd.net
+- llnwi.net

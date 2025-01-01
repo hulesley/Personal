@@ -1,0 +1,17 @@
+# 规则名称：Binance
+# 规则统计：总数量=12
+# 规则统计：DOMAIN-SUFFIX 数量=12
+
+domain_suffix_set:
+- appsflayer.com
+- binance.cloud
+- binance.com
+- binance.me
+- binancecnt.com
+- binancefuture.com
+- bnappzh.co
+- bnbstatic.com
+- bnbzh.ac
+- bntrace.com
+- saasexch.cc
+- saasexch.com

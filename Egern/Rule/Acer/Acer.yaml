@@ -1,0 +1,10 @@
+# 规则名称：Acer
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- acer-group.com
+- acer.com
+- acer.com.cn
+- founderpc.cn
+- founderpc.com

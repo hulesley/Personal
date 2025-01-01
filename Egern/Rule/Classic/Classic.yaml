@@ -1,0 +1,9 @@
+# 规则名称：Classic
+# 规则统计：总数量=4
+# 规则统计：DOMAIN 数量=4
+
+domain_set:
+- asia.battle.net
+- europe.battle.net
+- useast.battle.net
+- uswest.battle.net

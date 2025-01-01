@@ -1,0 +1,28 @@
+# 规则名称：Synology
+# 规则统计：总数量=19
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=17
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_set:
+- d2f0395ykn6hxb.cloudfront.net
+domain_suffix_set:
+- diskstation.me
+- dscloud.biz
+- dscloud.me
+- dscloud.mobi
+- dsmunas.com
+- dsmunas.net
+- dsmunas.org
+- familyds.com
+- familyds.net
+- familyds.org
+- i234.me
+- myds.com
+- quickconnect.to
+- synodns.com
+- synology.cn
+- synology.com
+- synology.me
+domain_keyword_set:
+- synology

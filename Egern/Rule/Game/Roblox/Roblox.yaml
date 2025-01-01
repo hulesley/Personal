@@ -1,0 +1,9 @@
+# 规则名称：Roblox
+# 规则统计：总数量=2
+# 规则统计：DOMAIN-SUFFIX 数量=1
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_suffix_set:
+- rbxcdn.com
+domain_keyword_set:
+- roblox

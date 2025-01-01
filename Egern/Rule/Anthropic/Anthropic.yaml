@@ -1,0 +1,10 @@
+# 规则名称：Anthropic
+# 规则统计：总数量=3
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=2
+
+domain_set:
+- servd-anthropic-website.b-cdn.net
+domain_suffix_set:
+- anthropic.com
+- claude.ai

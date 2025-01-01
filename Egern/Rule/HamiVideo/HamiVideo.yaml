@@ -1,0 +1,13 @@
+# 规则名称：HamiVideo
+# 规则统计：总数量=4
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=2
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_set:
+- hls-hichannel.cdn.hinet.net
+domain_suffix_set:
+- hamivideo.hinet.net
+- ott.hinet.net
+domain_keyword_set:
+- hamivideo.cdn.hinet.net

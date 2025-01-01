@@ -1,0 +1,12 @@
+# 规则名称：Olevod
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=4
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_suffix_set:
+- haiwaikan.com
+- iole.tv
+- olehd.com
+- olelive.com
+domain_keyword_set:
+- olevod

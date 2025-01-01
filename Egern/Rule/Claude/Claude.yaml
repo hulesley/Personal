@@ -1,0 +1,10 @@
+# 规则名称：Claude
+# 规则统计：总数量=3
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=2
+
+domain_set:
+- cdn.usefathom.com
+domain_suffix_set:
+- anthropic.com
+- claude.ai

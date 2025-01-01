@@ -1,0 +1,12 @@
+# 规则名称：Deepin
+# 规则统计：总数量=7
+# 规则统计：DOMAIN-SUFFIX 数量=7
+
+domain_suffix_set:
+- chinauos.com
+- deepin.cn
+- deepin.com
+- deepin.io
+- deepin.org
+- linglong.dev
+- uniontech.com

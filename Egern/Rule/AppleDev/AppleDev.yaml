@@ -1,0 +1,41 @@
+# 规则名称：AppleDev
+# 规则统计：总数量=36
+# 规则统计：DOMAIN-SUFFIX 数量=36
+
+domain_suffix_set:
+- apple-cloudkit.com
+- apple-mapkit.com
+- apple.com.akadns.net
+- appleswift.com
+- appleworldwidedeveloper.hb-api.omtrdc.net
+- appleworldwidedeveloper.sc.omtrdc.net
+- calendarserver.org
+- carekit.org
+- courier-push-apple.com.akadns.net
+- cups.org
+- developer.apple.com
+- devimages-cdn.apple.com
+- devstreaming-cdn.apple.com
+- foundationdb.org
+- macosforge.org
+- macruby.com
+- macruby.net
+- macruby.org
+- p-events-delivery.akamaized.net
+- playgrounds-cdn.apple.com
+- push-apple.com.akadns.net
+- researchandcare.org
+- researchkit.cn
+- researchkit.com.cn
+- researchkit.hk
+- researchkit.net
+- researchkit.org
+- researchkit.tv
+- servicetalk.io
+- swift.org
+- swiftui.cn
+- swiftui.com.cn
+- webkit.org
+- webkitgtk.org
+- webobjects.com
+- wpewebkit.org

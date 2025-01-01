@@ -1,0 +1,10 @@
+# 规则名称：YiChe
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- bitauto.com
+- bitautoimg.com
+- cheyisou.com
+- yccdn.com
+- yiche.com

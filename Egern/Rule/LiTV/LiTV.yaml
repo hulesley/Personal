@@ -1,0 +1,9 @@
+# 规则名称：LiTV
+# 规则统计：总数量=2
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=1
+
+domain_set:
+- litvfreemobile-hichannel.cdn.hinet.net
+domain_suffix_set:
+- litv.tv

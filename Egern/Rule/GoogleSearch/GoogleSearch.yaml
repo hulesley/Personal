@@ -1,0 +1,6 @@
+# 规则名称：GoogleSearch
+# 规则统计：总数量=1
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_keyword_set:
+- www.google.

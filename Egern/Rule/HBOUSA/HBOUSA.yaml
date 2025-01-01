@@ -1,0 +1,16 @@
+# 规则名称：HBOUSA
+# 规则统计：总数量=9
+# 规则统计：DOMAIN 数量=1
+# 规则统计：DOMAIN-SUFFIX 数量=8
+
+domain_set:
+- wmff.warnermediacdn.com
+domain_suffix_set:
+- cinemax.com
+- discomax.com
+- h264.io
+- hbomax.com
+- hbomaxcdn.com
+- hbomaxdash.s.llnwi.net
+- hbonow.com
+- maxgo.com

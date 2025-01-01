@@ -1,0 +1,7 @@
+# 规则名称：Hkgolden
+# 规则统计：总数量=2
+# 规则统计：DOMAIN-SUFFIX 数量=2
+
+domain_suffix_set:
+- hkgolden.com
+- hkgolden.media

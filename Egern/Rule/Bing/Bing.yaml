@@ -1,0 +1,14 @@
+# 规则名称：Bing
+# 规则统计：总数量=9
+# 规则统计：DOMAIN-SUFFIX 数量=9
+
+domain_suffix_set:
+- bing.com
+- bing.com.cn
+- bing.net
+- bingads.com
+- bingagencyawards.com
+- bingapistatistics.com
+- bingsandbox.com
+- bingvisualsearch.com
+- bingworld.com

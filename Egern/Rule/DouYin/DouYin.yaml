@@ -1,0 +1,20 @@
+# 规则名称：DouYin
+# 规则统计：总数量=13
+# 规则统计：DOMAIN 数量=2
+# 规则统计：DOMAIN-SUFFIX 数量=11
+
+domain_set:
+- lf3-static.bytednsdoc.com
+- v5-dy-o-abtest.zjcdn.com
+domain_suffix_set:
+- amemv.com
+- douyincdn.com
+- douyinpic.com
+- douyinstatic.com
+- douyinvod.com
+- idouyinvod.com
+- ixigua.com
+- ixiguavideo.com
+- pstatp.com
+- snssdk.com
+- toutiao.com

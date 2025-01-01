@@ -1,0 +1,11 @@
+# 规则名称：ChinaDNS
+# 规则统计：总数量=4
+# 规则统计：DOMAIN-SUFFIX 数量=3
+# 规则统计：IP-CIDR 数量=1
+no_resolve: true
+domain_suffix_set:
+- dns.alidns.com
+- doh.360.cn
+- doh.pub
+ip_cidr_set:
+- 1.12.12.12/32

@@ -1,0 +1,10 @@
+# 规则名称：ZhongGuoShiHua
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- sinopec-usa.com
+- sinopec.com
+- sinopecgroup.com
+- sinopecnews.com.cn
+- sinopecsales.com

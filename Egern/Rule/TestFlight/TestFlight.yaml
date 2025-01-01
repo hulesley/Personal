@@ -1,0 +1,10 @@
+# 规则名称：TestFlight
+# 规则统计：总数量=3
+# 规则统计：DOMAIN 数量=2
+# 规则统计：DOMAIN-KEYWORD 数量=1
+
+domain_set:
+- beta.apple.com
+- testflight.apple.com
+domain_keyword_set:
+- testflight

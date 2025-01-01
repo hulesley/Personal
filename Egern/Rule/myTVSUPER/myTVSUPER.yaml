@@ -1,0 +1,15 @@
+# 规则名称：myTVSUPER
+# 规则统计：总数量=6
+# 规则统计：DOMAIN 数量=2
+# 规则统计：DOMAIN-SUFFIX 数量=2
+# 规则统计：DOMAIN-KEYWORD 数量=2
+
+domain_set:
+- mytvsuperlimited.hb.omtrdc.net
+- mytvsuperlimited.sc.omtrdc.net
+domain_suffix_set:
+- mytvsuper.com
+- tvb.com
+domain_keyword_set:
+- nowtv100
+- rthklive

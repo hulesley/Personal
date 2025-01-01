@@ -1,0 +1,10 @@
+# 规则名称：Sling
+# 规则统计：总数量=5
+# 规则统计：DOMAIN-SUFFIX 数量=5
+
+domain_suffix_set:
+- dishworld.com
+- movenetworks.com
+- movetv.com
+- sling.com
+- slinginternational.com

@@ -1,0 +1,14 @@
+# 规则名称：Cake
+# 规则统计：总数量=7
+# 规则统计：DOMAIN 数量=4
+# 规则统计：DOMAIN-SUFFIX 数量=3
+
+domain_set:
+- d1koerlbtsmkf8.cloudfront.net
+- d31wl6mro6753i.cloudfront.net
+- static-mycake.pstatic.net
+- vstatic-mycake.pstatic.net
+domain_suffix_set:
+- cake.day
+- cakeapp.me
+- mycake.me
