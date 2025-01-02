@@ -75,7 +75,7 @@ DOMAIN-SUFFIX,map.qq.com,DIRECT
 DOMAIN-SUFFIX,qlogo.cn,DIRECT
 DOMAIN-SUFFIX,qpic.cn,DIRECT
 DOMAIN-SUFFIX,servicewechat.com,香港节点
-DOMAIN-SUFFIX,tenpay.com,DIRECT
+DOMAIN-SUFFIX,tenpay.com, DIRECT
 DOMAIN-SUFFIX,up-hl.3g.qq.com,DIRECT
 DOMAIN-SUFFIX,vweixinthumb.tc.qq.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,香港节点
@@ -92,7 +92,7 @@ DOMAIN-SUFFIX,wxs.qq.com,DIRECT
 DOMAIN-SUFFIX,yun-hl.3g.qq.com,DIRECT
 USER-AGENT,MicroMessenger*,DIRECT
 USER-AGENT,WeChat*,香港节点
-IP-ASN,132203,香港节点,no-resolve
+IP-ASN,132203,香港节点, no-resolve
 
 [URL Rewrite]
 ^https:\/\/webapi\.qmai\.cn\/web\/cmk-center\/marketing\/canvas\/advert-reach - reject
