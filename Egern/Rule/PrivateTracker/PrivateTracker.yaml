@@ -1,6 +1,6 @@
 # 规则名称：PrivateTracker
-# 规则统计：总数量=281
-# 规则统计：DOMAIN 数量=151
+# 规则统计：总数量=280
+# 规则统计：DOMAIN 数量=150
 # 规则统计：DOMAIN-SUFFIX 数量=123
 # 规则统计：DOMAIN-KEYWORD 数量=4
 # 规则统计：IP-CIDR 数量=3
@@ -23,7 +23,6 @@ domain_set:
 - concen.org
 - cq.kmzs123.cn
 - d40969.acod.regrucolo.ru
-- discord.heihachi.pw
 - ec2-18-191-163-220.us-east-2.compute.amazonaws.com
 - evan.im
 - exodus.desync.com
@@ -45,6 +44,7 @@ domain_set:
 - open.acgtracker.com
 - open.demonii.com
 - open.dstud.io
+- open.free-tracker.ga
 - open.stealth.si
 - open.tracker.cl
 - open.tracker.ink
@@ -102,11 +102,11 @@ domain_set:
 - tracker.dler.org
 - tracker.dmcomic.org
 - tracker.draatman.uk
-- tracker.dump.cl
 - tracker.edkj.club
 - tracker.filemail.com
 - tracker.fnix.net
 - tracker.gcrenwp.top
+- tracker.gigantino.net
 - tracker.gmi.gd
 - tracker.ipv6tracker.org
 - tracker.itscraftsoftware.my.id
@@ -118,7 +118,6 @@ domain_set:
 - tracker.moeking.me
 - tracker.moxing.party
 - tracker.mywaifu.best
-- tracker.ololosh.space
 - tracker.opentrackr.org
 - tracker.openwebtorrent.com
 - tracker.pmman.tech
